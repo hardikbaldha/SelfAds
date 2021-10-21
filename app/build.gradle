@@ -54,7 +54,4 @@ dependencies {
     compile 'com.yqritc:android-scalablevideoview:1.0.4'
     implementation 'com.vincan:medialoader:1.0.0'
 
-    //google
-    implementation 'com.google.android.gms:play-services-auth:19.2.0'
-    implementation 'com.google.android.gms:play-services-ads:20.3.0'
 }
