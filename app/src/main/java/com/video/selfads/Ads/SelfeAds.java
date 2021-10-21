@@ -1,8 +1,6 @@
 package com.video.selfads.Ads;
 
 import static com.video.selfads.Ads.full.SelfInterstitialAds.interstitialAdLoadCallback;
-import static com.video.selfads.MyApplication.randomItemFull;
-import static com.video.selfads.MyApplication.randomItemNative;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -48,6 +46,7 @@ import com.yqritc.scalablevideoview.ScalableVideoView;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -385,6 +384,19 @@ public class SelfeAds {
             }
         });
         dialog.show();
+    }
+
+
+    public static int randomItemFull(ArrayList<InterTitialArray> arr_data) {
+        Random random = new Random();
+        int index = random.nextInt(arr_data.size());
+        return index;
+    }
+
+    public static int randomItemNative(ArrayList<NativeArray> arr_data) {
+        Random random = new Random();
+        int index = random.nextInt(arr_data.size());
+        return index;
     }
 
     public static void preloadSelfInterstitialAd() {
